@@ -22,7 +22,7 @@ public class UserEndPoints {
 		.body(payload)								// attach request body (User object → JSON)
 		
 		.when()
-		.post(Routes.base_url); 					 // make POST request to the API (base URL)
+		.post(Routes.post_url); 					 // make POST request to the API (base URL)
 		
 		return response;                        // return the response back
 		

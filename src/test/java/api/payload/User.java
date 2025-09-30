@@ -2,7 +2,10 @@ package api.payload;
 
 public class User {
 	
+	//User → The payload class for user data.
+	
 	int id =0;
+	
 	String username;
     String firstName;
     String lastName;
@@ -10,6 +13,14 @@ public class User {
     String password;
     String  phone;
     int userStatus=0;
+    
+    
+    public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
     
 
     public String getUsername() {
