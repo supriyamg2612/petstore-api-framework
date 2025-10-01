@@ -23,7 +23,7 @@ import io.restassured.response.Response;
 
 		@Test(priority = 1, dataProvider = "Data", dataProviderClass = DataProviders.class, groups = {"createUser"})
 	    public void testPostuser(String userID, String userName, String fname, String lname,
-	                             String useremail, String pwd, String ph) {
+	                             String useremail, String pwd, String ph) throws InterruptedException {
 
 	        // Create ExtentTest for this method
 	        ExtentTest methodTest = ExtentReportManager.createTest("Create User: " + userName);
@@ -43,6 +43,8 @@ import io.restassured.response.Response;
 	        methodTest.log(Status.INFO, "POST response body: " + response.getBody().asString());
 
 	        Assert.assertEquals(response.getStatusCode(), 200);
+	        Thread.sleep(300);
+
 	        methodTest.log(Status.PASS, "User " + userName + " created successfully.");
 	    }
 

@@ -1,6 +1,8 @@
 package api.test;
 
 
+
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -9,13 +11,15 @@ import com.github.javafaker.Faker;
 
 import api.endpoints.UserEndPoints;
 import api.payload.User;
-import groovyjarjarantlr4.v4.codegen.model.chunk.ThisRulePropertyRef_ctx;
 import io.restassured.response.Response;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class UserTests {
 	
 	Faker faker;    // Faker → Used to generate random test data.
 	User userPayload;
+	public Logger logger;
 	
 	@BeforeClass
 	public void setupData() {
@@ -31,33 +35,49 @@ public class UserTests {
 		userPayload.setPassword(faker.internet().password(5, 10));
 		userPayload.setPhone(faker.phoneNumber().cellPhone());
 		
-	}
+		
+		// logs
+			logger= LogManager.getLogger(this.getClass());
+		
+		logger.debug("debugging.....");
+		
+	}	
+				
 		
 		@Test(priority = 1)
 		public void testPostUser(){
-			
+			logger.info("********** Creating user  ***************");
 			Response reponse = UserEndPoints.createUser(userPayload);
 			reponse.then().log().all();
 			Assert.assertEquals(reponse.getStatusCode(), 200);
-			
+			logger.info("**********User is creatged  ***************");
+
 			}
 		
 		
 		@Test(priority = 2)
 
-		public void testgetUserByName(){
+		public void testgetUserByName() throws InterruptedException{
+			
+			logger.info("********** Reading User Info ***************");
+
 			
 			Response reponse = UserEndPoints.readUser(this.userPayload.getUsername());
 			reponse.then().log().all();
 			Assert.assertEquals(reponse.getStatusCode(), 200);
+			Thread.sleep(300);
 
-			
+			logger.info("**********User info  is displayed ***************");
+
 
 		}
 		
 		
 		@Test(priority = 3)
 		public void testUpdateUserByName(){
+			
+			logger.info("********** Updating User ***************");
+
 			//update data using payload
 			
 			userPayload.setFirstName(faker.name().firstName());
@@ -67,6 +87,9 @@ public class UserTests {
 			Response reponse = UserEndPoints.updateUser(this.userPayload.getUsername(), userPayload);
 			reponse.then().log().all();
 			Assert.assertEquals(reponse.getStatusCode(), 200);
+			
+			logger.info("********** User updated ***************");
+
 			
 			// check data after updation
 			
@@ -79,8 +102,14 @@ public class UserTests {
 		@Test(priority = 4)
 		public void testDeleteUserByName(){
 			
+			logger.info("**********   Deleting User  ***************");
+
+			
 			Response reponse = UserEndPoints.deleteUser(this.userPayload.getUsername());
 			Assert.assertEquals(reponse.getStatusCode(), 200);
+			
+			logger.info("********** User deleted ***************");
+
 
 		}
 		

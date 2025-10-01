@@ -8,7 +8,7 @@
 
    
    
-  <test thread-count="5" name="PetTests">
+<test thread-count="1" name="PetTests"> <!-- force sequential execution -->
   
   <classes>
       <!-- <class name="api.test.UserTests"/> -->

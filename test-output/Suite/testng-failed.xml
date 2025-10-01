@@ -6,9 +6,14 @@
   </listeners>
   <test thread-count="5" name="PetTests(failed)">
     <classes>
+      <class name="api.test.DataDrivenTest">
+        <methods>
+          <include name="testDeleteUserByName" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- api.test.DataDrivenTest -->
       <class name="api.test.UserTests">
         <methods>
-          <include name="testDeleteUserByName"/>
+          <include name="testgetUserByName"/>
           <include name="setupData"/>
         </methods>
       </class> <!-- api.test.UserTests -->
