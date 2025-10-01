@@ -4,19 +4,15 @@
   <listeners>
     <listener class-name="api.utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="PetTests(failed)">
+  <test thread-count="5" name="PetTestsUsingPropertyfile(failed)">
     <classes>
-      <class name="api.test.DataDrivenTest">
+      <class name="api.test.UserTestTwo">
         <methods>
-          <include name="testDeleteUserByName" invocation-numbers="0"/>
+          <include name="testUpdateUserByName"/>
+          <include name="testDeleteUserByName"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- api.test.DataDrivenTest -->
-      <class name="api.test.UserTests">
-        <methods>
-          <include name="testgetUserByName"/>
-          <include name="setupData"/>
-        </methods>
-      </class> <!-- api.test.UserTests -->
+      </class> <!-- api.test.UserTestTwo -->
     </classes>
-  </test> <!-- PetTests(failed) -->
+  </test> <!-- PetTestsUsingPropertyfile(failed) -->
 </suite> <!-- Failed suite [Suite] -->
