@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-01T11:02:41 CEST" name="Suite" finished-at="2025-10-01T11:02:59 CEST" duration-ms="17495">
+  <suite started-at="2025-10-01T11:42:34 CEST" name="Default suite" finished-at="2025-10-01T11:42:48 CEST" duration-ms="13882">
     <groups>
+      <group name="createUser">
+        <method signature="DataDrivenTest.testPostuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DataDrivenTest@49ec71f8]" name="testPostuser" class="api.test.DataDrivenTest"/>
+      </group> <!-- createUser -->
     </groups>
-    <test started-at="2025-10-01T11:02:41 CEST" name="PetTests" finished-at="2025-10-01T11:02:59 CEST" duration-ms="17495">
+    <test started-at="2025-10-01T11:42:34 CEST" name="Default test" finished-at="2025-10-01T11:42:48 CEST" duration-ms="13882">
       <class name="api.test.DataDrivenTest">
-        <test-method signature="testPostuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DataDrivenTest@76505305]" started-at="2025-10-01T11:02:53 CEST" name="testPostuser" data-provider="Data" finished-at="2025-10-01T11:02:54 CEST" duration-ms="626" status="PASS">
+        <test-method signature="testPostuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DataDrivenTest@49ec71f8]" started-at="2025-10-01T11:42:38 CEST" name="testPostuser" data-provider="Data" finished-at="2025-10-01T11:42:43 CEST" duration-ms="4334" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostuser -->
-        <test-method signature="testPostuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DataDrivenTest@76505305]" started-at="2025-10-01T11:02:54 CEST" name="testPostuser" data-provider="Data" finished-at="2025-10-01T11:02:54 CEST" duration-ms="610" status="PASS">
+        <test-method signature="testPostuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DataDrivenTest@49ec71f8]" started-at="2025-10-01T11:42:43 CEST" name="testPostuser" data-provider="Data" finished-at="2025-10-01T11:42:44 CEST" duration-ms="793" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,7 +92,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostuser -->
-        <test-method signature="testPostuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DataDrivenTest@76505305]" started-at="2025-10-01T11:02:54 CEST" name="testPostuser" data-provider="Data" finished-at="2025-10-01T11:02:55 CEST" duration-ms="696" status="PASS">
+        <test-method signature="testPostuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DataDrivenTest@49ec71f8]" started-at="2025-10-01T11:42:44 CEST" name="testPostuser" data-provider="Data" finished-at="2025-10-01T11:42:44 CEST" duration-ms="616" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,7 +133,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostuser -->
-        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DataDrivenTest@76505305]" started-at="2025-10-01T11:02:55 CEST" name="testDeleteUserByName" data-provider="UserNames" finished-at="2025-10-01T11:02:56 CEST" duration-ms="1203" status="PASS">
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DataDrivenTest@49ec71f8]" started-at="2025-10-01T11:42:44 CEST" name="testDeleteUserByName" data-provider="UserNames" depends-on-groups="createUser" finished-at="2025-10-01T11:42:46 CEST" duration-ms="1272" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,7 +144,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteUserByName -->
-        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DataDrivenTest@76505305]" started-at="2025-10-01T11:02:56 CEST" name="testDeleteUserByName" data-provider="UserNames" finished-at="2025-10-01T11:02:58 CEST" duration-ms="1298" status="PASS">
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DataDrivenTest@49ec71f8]" started-at="2025-10-01T11:42:46 CEST" name="testDeleteUserByName" data-provider="UserNames" depends-on-groups="createUser" finished-at="2025-10-01T11:42:47 CEST" duration-ms="1232" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,7 +155,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteUserByName -->
-        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DataDrivenTest@76505305]" started-at="2025-10-01T11:02:58 CEST" name="testDeleteUserByName" data-provider="UserNames" finished-at="2025-10-01T11:02:59 CEST" duration-ms="1236" status="FAIL">
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DataDrivenTest@49ec71f8]" started-at="2025-10-01T11:42:47 CEST" name="testDeleteUserByName" data-provider="UserNames" depends-on-groups="createUser" finished-at="2025-10-01T11:42:48 CEST" duration-ms="1223" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -160,117 +163,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failed to delete user: testuser3 expected [200] but found [404]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed to delete user: testuser3 expected [200] but found [404]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1419)
-at org.testng.Assert.assertEquals(Assert.java:1383)
-at api.test.DataDrivenTest.testDeleteUserByName(DataDrivenTest.java:44)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteUserByName -->
       </class> <!-- api.test.DataDrivenTest -->
-      <class name="api.test.UserTests">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.UserTests@55141def]" started-at="2025-10-01T11:02:42 CEST" name="setupData" finished-at="2025-10-01T11:02:43 CEST" duration-ms="490" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupData -->
-        <test-method signature="testPostUser()[pri:1, instance:api.test.UserTests@55141def]" started-at="2025-10-01T11:02:43 CEST" name="testPostUser" finished-at="2025-10-01T11:02:47 CEST" duration-ms="4775" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPostUser -->
-        <test-method signature="testgetUserByName()[pri:2, instance:api.test.UserTests@55141def]" started-at="2025-10-01T11:02:47 CEST" name="testgetUserByName" finished-at="2025-10-01T11:02:49 CEST" duration-ms="1424" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [404]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1419)
-at org.testng.Assert.assertEquals(Assert.java:1383)
-at org.testng.Assert.assertEquals(Assert.java:1429)
-at api.test.UserTests.testgetUserByName(UserTests.java:52)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testgetUserByName -->
-        <test-method signature="testUpdateUserByName()[pri:3, instance:api.test.UserTests@55141def]" started-at="2025-10-01T11:02:49 CEST" name="testUpdateUserByName" finished-at="2025-10-01T11:02:51 CEST" duration-ms="1851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdateUserByName -->
-        <test-method signature="testDeleteUserByName()[pri:4, instance:api.test.UserTests@55141def]" started-at="2025-10-01T11:02:51 CEST" name="testDeleteUserByName" finished-at="2025-10-01T11:02:51 CEST" duration-ms="616" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteUserByName -->
-      </class> <!-- api.test.UserTests -->
-    </test> <!-- PetTests -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

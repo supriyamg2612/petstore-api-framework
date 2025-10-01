@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="api.utilities.ExtentReportManager"/>
-  </listeners>
-  <test thread-count="5" name="PetTests(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="api.test.DataDrivenTest">
         <methods>
-          <include name="testDeleteUserByName" invocation-numbers="2"/>
+          <include name="testDeleteUserByName" invocation-numbers="0"/>
         </methods>
       </class> <!-- api.test.DataDrivenTest -->
-      <class name="api.test.UserTests">
-        <methods>
-          <include name="setupData"/>
-          <include name="testgetUserByName"/>
-        </methods>
-      </class> <!-- api.test.UserTests -->
     </classes>
-  </test> <!-- PetTests(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

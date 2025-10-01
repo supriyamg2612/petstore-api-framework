@@ -6,15 +6,10 @@
   </listeners>
   <test thread-count="5" name="PetTests(failed)">
     <classes>
-      <class name="api.test.DataDrivenTest">
-        <methods>
-          <include name="testDeleteUserByName" invocation-numbers="2"/>
-        </methods>
-      </class> <!-- api.test.DataDrivenTest -->
       <class name="api.test.UserTests">
         <methods>
+          <include name="testDeleteUserByName"/>
           <include name="setupData"/>
-          <include name="testgetUserByName"/>
         </methods>
       </class> <!-- api.test.UserTests -->
     </classes>
