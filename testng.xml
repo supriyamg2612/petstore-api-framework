@@ -2,18 +2,23 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
- <listeners>
-   <listener class-name="api.utilities.ExtentReportManager" />
-</listeners>
+    <listeners>
+        <listener class-name="api.utilities.ExtentReportManager" />
+    </listeners>
 
-   
-   
-<test thread-count="1" name="PetTests"> <!-- force sequential execution -->
-  
-  <classes>
-      <!-- <class name="api.test.UserTests"/> -->
-       <class name="api.test.UserTests"/>
-     <class name="api.test.DataDrivenTest"/>
-    </classes>
-  </test> <!-- PetTests -->
-</suite> <!-- Suite -->
+    <!--
+    <test thread-count="1" name="PetTests"> 
+        <classes>
+            <class name="api.test.UserTests"/>
+            <class name="api.test.DataDrivenTest"/>
+        </classes>
+    </test>
+    -->
+
+    <test thread-count="1" name="PetTestsUsingPropertyfile">
+        <classes>
+            <class name="api.test.UserTestTwo"/>
+        </classes>
+    </test>
+
+</suite>
